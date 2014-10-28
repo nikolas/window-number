@@ -1,18 +1,19 @@
 ;;; window-number.el --- Select windows by numbers.
+;; Copyright (C) 2004, Johann "Myrkraverk" Oskarsson, all rights reserved.
+;; Copyright (C) 2014, Andy Stewart, all rights reserved.
 
 ;; Filename: window-number.el
 ;; Description: Select windows by numbers.
 ;; Author: Johann "Myrkraverk" Oskarsson <myrkraverk@users.sourceforge.net>
-;; Maintainer: Johann "Myrkraverk" Oskarsson <myrkraverk@users.sourceforge.net>
+;; Maintainer: Nik Nyby <niknyby@riseup.net>
+;;             Johann "Myrkraverk" Oskarsson <myrkraverk@users.sourceforge.net>
 ;;             Andy Stewart <lazycat.manatee@gmail.com>
-;; Copyright (C) 2004, Johann "Myrkraverk" Oskarsson, all rights reserved.
-;; Copyright (C) 2014, Andy Stewart, all rights reserved.
 ;; Created: 2004
-;; Version: 0.1
+;; Version: 1.0.2
 ;; Last-Updated: 2014-01-24 10:25:03
 ;;           By: Andy Stewart
 ;; URL: http://www.emacswiki.org/emacs/download/window-number.el
-;; Keywords:
+;; Keywords: windows
 ;; Compatibility: GNU Emacs 24.3.50.1
 ;;
 ;; Features that might be required by this library:

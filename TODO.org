@@ -1,0 +1,9 @@
+* TODO fix these errors:
+  window-number.el:106:1:Warning: cl package required at runtime
+  window-number.el:110:1:Warning: defgroup for `window-number' fails to specify
+  containing group
+
+  In window-number-switch:
+  window-number.el:170:29:Warning: `string-to-int' is an obsolete function (as
+  of 22.1); use `string-to-number' instead.
+
