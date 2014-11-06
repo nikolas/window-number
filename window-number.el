@@ -167,7 +167,7 @@ Prompt user input window number if have more windows."
           (window-number-select
            (if (string= select-index-string "")
                next-window-index
-             (string-to-int select-index-string))))
+             (string-to-number select-index-string))))
       ;; Reset to inactive color if interactive is intercept by Ctrl+g
       (window-number-set-inactive-color)
       ))
