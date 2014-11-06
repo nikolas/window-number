@@ -9,9 +9,9 @@
 ;;             Johann "Myrkraverk" Oskarsson <myrkraverk@users.sourceforge.net>
 ;;             Andy Stewart <lazycat.manatee@gmail.com>
 ;; Created: 2004
-;; Version: 1.0.2
-;; Last-Updated: 2014-01-24 10:25:03
-;;           By: Andy Stewart
+;; Version: 1.0.3
+;; Last-Updated: 2014-11-06 21:24:03
+;;           By: Nik Nyby
 ;; URL: http://www.emacswiki.org/emacs/download/window-number.el
 ;; Keywords: windows
 ;; Compatibility: GNU Emacs 24.3.50.1
