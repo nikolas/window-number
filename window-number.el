@@ -108,7 +108,8 @@
 ;;; Code:
 
 (defgroup window-number nil
-  "Window number group")
+  "Window number group"
+  :group 'convenience)
 
 (defcustom window-number-active-foreground "black"
   "The foreground color when window number active."
