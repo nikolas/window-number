@@ -137,6 +137,9 @@
 (defface window-number-face nil
   "The face used for the window number in the mode-line.")
 
+(defvar-local window-number-skip nil
+  "Set this variable to true (for example, in a mode hook) to not number this window.")
+
 (defun window-number-list ()
   "Returns a list of the windows, in fixed order and the
 minibuffer (even if not active) last."
@@ -149,7 +152,10 @@ minibuffer (even if not active) last."
     (while (progn
              (setq walk-windows-current
                    (next-window walk-windows-current t))
-             (setq list (cons walk-windows-current list))
+             (let ((b (window-buffer walk-windows-current)))
+               (when (or (not b)
+                         (with-current-buffer b (not window-number-skip)))
+                 (setq list (cons walk-windows-current list))))
              (not (eq walk-windows-current walk-windows-start))))
     (reverse (cons (car list) (cdr list)))))
 
@@ -206,10 +212,12 @@ Prompt user input window number if have more windows."
 
 (defun window-number-string ()
   "Returns the string containing the number of the current window"
-  (propertize
-   (concat " [" (number-to-string (window-number)) "] ")
-   'face
-   'window-number-face))
+  (let ((n (window-number)))
+    (if (= n 0) ""
+      (propertize
+       (concat " [" (number-to-string n) "] ")
+       'face
+       'window-number-face))))
 
 (defvar window-number-mode-map nil
   "Keymap for the window number mode.")
